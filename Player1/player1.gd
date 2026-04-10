@@ -32,3 +32,4 @@ func handle_movement() -> void:
 		velocity.y = vertical_float * Speed
 	else:
 		velocity.x = lerp(velocity.x, 0.0, DECELERATION)
+		velocity.y = lerp(velocity.y, 0.0, DECELERATION)
