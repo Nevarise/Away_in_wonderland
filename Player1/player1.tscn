@@ -116,8 +116,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ac6tw"]
-radius = 7.0
-height = 58.0
+radius = 9.0
+height = 18.0
 
 [node name="Player1" type="CharacterBody2D"]
 script = ExtResource("1_k42ts")
@@ -131,7 +131,7 @@ frame_progress = 0.7190884
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
+position = Vector2(0, 24)
 shape = SubResource("CapsuleShape2D_ac6tw")
 
 [node name="Camera2D" type="Camera2D" parent="."]

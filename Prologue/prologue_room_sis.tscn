@@ -1,0 +1,265 @@
+[gd_scene load_steps=20 format=4 uid="uid://bwms03mo63e3o"]
+
+[ext_resource type="PackedScene" uid="uid://68jaekb76sof" path="res://Player1/player1.tscn" id="1_4g462"]
+[ext_resource type="TileSet" uid="uid://baxs5066p27qe" path="res://Prologue/Top-Down_Retro_Interior/prologue_hallway.tres" id="2_8tulj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4g462"]
+size = Vector2(384, 6.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40ay8"]
+size = Vector2(29, 197)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ghme"]
+size = Vector2(20, 191)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypoyl"]
+size = Vector2(384, 18.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8tulj"]
+size = Vector2(24.673492, 45.62815)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhykh"]
+size = Vector2(44, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jk88f"]
+size = Vector2(43, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sf3lf"]
+size = Vector2(18.236843, 8.750427)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r68mi"]
+size = Vector2(20.191246, 23.126602)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2myj0"]
+size = Vector2(13.754639, 23.125916)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_la1vt"]
+size = Vector2(31.991547, 63.12863)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8i2ej"]
+size = Vector2(32.18274, 63.129364)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cql55"]
+size = Vector2(45.93741, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubmf4"]
+size = Vector2(43.44671, 35.627464)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vmnkg"]
+size = Vector2(28.496063, 59.900192)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cekru"]
+size = Vector2(6.9618225, 28.127686)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u58lv"]
+size = Vector2(27.847168, 49.654083)
+
+[node name="Prologue_RoomSis" type="Node2D"]
+
+[node name="Player1" parent="." instance=ExtResource("1_4g462")]
+z_index = 6
+position = Vector2(462, 328)
+
+[node name="Tilemap" type="Node2D" parent="."]
+
+[node name="Wall and Floor" type="TileMapLayer" parent="Tilemap"]
+tile_map_data = PackedByteArray("AAASABQABAAJAAUAAAASABUABAAJAAYAAAASABYABAAJAAYAAAASABcABAAJAAYAAAASABgABAAJAAYAAAATABQABAAKAAUAAAATABUABAAKAAYAAAATABYABAAKAAYAAAATABcABAAKAAYAAAATABgABAAKAAYAAAAUABQABAALAAUAAAAUABUABAALAAYAAAAUABYABAALAAYAAAAUABcABAALAAYAAAAUABgABAALAAYAAAAVABQABAAKAAUAAAAVABUABAAKAAYAAAAVABYABAAKAAYAAAAVABcABAAKAAYAAAAVABgABAAKAAYAAAAWABQABAALAAUAAAAWABUABAALAAYAAAAWABYABAALAAYAAAAWABcABAALAAYAAAAWABgABAALAAYAAAAXABQABAAKAAUAAAAXABUABAAKAAYAAAAXABYABAALAAYAAAAXABcABAALAAYAAAAXABgABAAKAAYAAAAYABQABAALAAUAAAAYABUABAALAAYAAAAYABYABAAKAAYAAAAYABcABAAKAAYAAAAYABgABAALAAYAAAAZABQABAAKAAUAAAAZABUABAAKAAYAAAAZABYABAALAAYAAAAZABcABAALAAYAAAAZABgABAAKAAYAAAAaABQABAALAAUAAAAaABUABAALAAYAAAAaABYABAAKAAYAAAAaABcABAAKAAYAAAAaABgABAALAAYAAAAbABQABAAKAAUAAAAbABUABAAKAAYAAAAbABYABAALAAYAAAAbABcABAALAAYAAAAbABgABAAKAAYAAAAcABQABAALAAUAAAAcABUABAALAAYAAAAcABYABAAKAAYAAAAcABcABAAKAAYAAAAcABgABAALAAYAAAAdABQABAAKAAUAAAAdABUABAAKAAYAAAAdABYABAALAAYAAAAdABcABAALAAYAAAAdABgABAAKAAYAAAAeABQABAALAAUAAAAeABUABAALAAYAAAAeABYABAAKAAYAAAAeABcABAAKAAYAAAAeABgABAALAAYAAAAfABQABAAKAAUAAAAfABUABAAKAAYAAAAfABYABAALAAYAAAAfABcABAALAAYAAAAfABgABAAKAAYAAAAgABQABAALAAUAAAAgABUABAALAAYAAAAgABYABAAKAAYAAAAgABcABAAKAAYAAAAgABgABAALAAYAAAAhABQABAAKAAUAAAAhABUABAAKAAYAAAAhABYABAALAAYAAAAhABcABAALAAYAAAAhABgABAAKAAYAAAAiABQABAALAAUAAAAiABUABAALAAYAAAAiABYABAAKAAYAAAAiABcABAAKAAYAAAAiABgABAALAAYAAAAjABQABAAKAAUAAAAjABUABAAKAAYAAAAjABYABAALAAYAAAAjABcABAALAAYAAAAjABgABAAKAAYAAAAkABQABAALAAUAAAAkABUABAALAAYAAAAkABYABAAKAAYAAAAkABcABAAKAAYAAAAkABgABAALAAYAAAAlABQABAAKAAUAAAAlABUABAAKAAYAAAAlABYABAALAAYAAAAlABcABAALAAYAAAAlABgABAAKAAYAAAAmABQABAALAAUAAAAmABUABAALAAYAAAAmABYABAALAAYAAAAmABcABAALAAYAAAAmABgABAALAAYAAAAnABQABAAKAAUAAAAnABUABAAKAAYAAAAnABYABAAKAAYAAAAnABcABAAKAAYAAAAnABgABAAKAAYAAAAoABQABAALAAUAAAAoABUABAALAAYAAAAoABYABAALAAYAAAAoABcABAALAAYAAAAoABgABAALAAYAAAApABQABAAKAAUAAAApABUABAAKAAYAAAApABYABAAKAAYAAAApABcABAAKAAYAAAApABgABAAKAAYAAAASABkABAAJAAcAAAATABkABAAKAAcAAAAUABkABAALAAcAAAAVABkABAAKAAcAAAAWABkABAALAAcAAAAXABkABAAKAAcAAAAYABkABAALAAcAAAAZABkABAAKAAcAAAAaABkABAALAAcAAAAbABkABAAKAAcAAAAcABkABAALAAcAAAAdABkABAAKAAcAAAAeABkABAALAAcAAAAfABkABAAKAAcAAAAgABkABAALAAcAAAAhABkABAAKAAcAAAAiABkABAALAAcAAAAjABkABAAKAAcAAAAkABkABAALAAcAAAAlABkABAAKAAcAAAAmABkABAALAAcAAAAnABkABAAKAAcAAAAoABkABAALAAcAAAApABkABAAKAAcAAAASAA4ABAAJAAEAAAASAA8ABAAJAAIAAAASABAABAAJAAMAAAASABEABAAJAAIAAAASABIABAAJAAMAAAASABMABAAJAAQAAAATAA4ABAAKAAEAAAATAA8ABAAKAAIAAAATABAABAAKAAMAAAATABEABAAKAAIAAAATABIABAAKAAMAAAATABMABAAKAAQAAAAUAA4ABAALAAEAAAAUAA8ABAALAAIAAAAUABAABAALAAMAAAAUABEABAAKAAIAAAAUABIABAAKAAMAAAAUABMABAAKAAQAAAAVAA4ABAAKAAEAAAAVAA8ABAAKAAIAAAAVABAABAAKAAIAAAAVABEABAAKAAMAAAAVABIABAALAAMAAAAVABMABAALAAQAAAAWAA4ABAALAAEAAAAWAA8ABAALAAIAAAAWABAABAALAAIAAAAWABEABAALAAMAAAAWABIABAAKAAMAAAAWABMABAAKAAQAAAAXAA4ABAAKAAEAAAAXAA8ABAAKAAIAAAAXABAABAAKAAIAAAAXABEABAAKAAMAAAAXABIABAALAAMAAAAXABMABAALAAQAAAAYAA4ABAALAAEAAAAYAA8ABAALAAIAAAAYABAABAALAAIAAAAYABEABAALAAMAAAAYABIABAAKAAMAAAAYABMABAAKAAQAAAAZAA4ABAAKAAEAAAAZAA8ABAAKAAIAAAAZABAABAAKAAIAAAAZABEABAAKAAMAAAAZABIABAALAAMAAAAZABMABAALAAQAAAAaAA4ABAALAAEAAAAaAA8ABAALAAIAAAAaABAABAALAAIAAAAaABEABAALAAMAAAAaABIABAAKAAMAAAAaABMABAAKAAQAAAAbAA4ABAAKAAEAAAAbAA8ABAAKAAIAAAAbABAABAAKAAIAAAAbABEABAAKAAMAAAAbABIABAALAAMAAAAbABMABAALAAQAAAAcAA4ABAALAAEAAAAcAA8ABAALAAIAAAAcABAABAALAAIAAAAcABEABAALAAMAAAAcABIABAAKAAMAAAAcABMABAAKAAQAAAAdAA4ABAAKAAEAAAAdAA8ABAAKAAIAAAAdABAABAAKAAIAAAAdABEABAAKAAMAAAAdABIABAALAAMAAAAdABMABAALAAQAAAAeAA4ABAALAAEAAAAeAA8ABAALAAIAAAAeABAABAALAAIAAAAeABEABAALAAMAAAAeABIABAAKAAMAAAAeABMABAAKAAQAAAAfAA4ABAAKAAEAAAAfAA8ABAAKAAIAAAAfABAABAAKAAIAAAAfABEABAAKAAMAAAAfABIABAALAAMAAAAfABMABAALAAQAAAAgAA4ABAALAAEAAAAgAA8ABAALAAIAAAAgABAABAALAAIAAAAgABEABAALAAMAAAAgABIABAAKAAMAAAAgABMABAAKAAQAAAAhAA4ABAAKAAEAAAAhAA8ABAAKAAIAAAAhABAABAAKAAIAAAAhABEABAAKAAMAAAAhABIABAALAAMAAAAhABMABAALAAQAAAAiAA4ABAALAAEAAAAiAA8ABAALAAIAAAAiABAABAALAAIAAAAiABEABAALAAMAAAAiABIABAAKAAMAAAAiABMABAAKAAQAAAAjAA4ABAAKAAEAAAAjAA8ABAAKAAIAAAAjABAABAAKAAIAAAAjABEABAAKAAMAAAAjABIABAALAAMAAAAjABMABAALAAQAAAAkAA4ABAALAAEAAAAkAA8ABAALAAIAAAAkABAABAALAAIAAAAkABEABAALAAMAAAAkABIABAAKAAMAAAAkABMABAAKAAQAAAAlAA4ABAAKAAEAAAAlAA8ABAAKAAIAAAAlABAABAAKAAIAAAAlABEABAAKAAMAAAAlABIABAALAAMAAAAlABMABAALAAQAAAAmAA4ABAALAAEAAAAmAA8ABAALAAIAAAAmABAABAALAAIAAAAmABEABAALAAMAAAAmABIABAAKAAMAAAAmABMABAAKAAQAAAAnAA4ABAAKAAEAAAAnAA8ABAAKAAIAAAAnABAABAAKAAIAAAAnABEABAAKAAMAAAAnABIABAALAAMAAAAnABMABAALAAQAAAAoAA4ABAALAAEAAAAoAA8ABAALAAIAAAAoABAABAALAAIAAAAoABEABAALAAMAAAAoABIABAAKAAMAAAAoABMABAAKAAQAAAApAA4ABAAKAAEAAAApAA8ABAAKAAIAAAApABAABAAKAAIAAAApABEABAAKAAMAAAApABIABAALAAMAAAApABMABAALAAQAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="Wall" type="StaticBody2D" parent="Tilemap/Wall and Floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Wall and Floor/Wall"]
+position = Vector2(481, 308)
+shape = SubResource("RectangleShape2D_4g462")
+
+[node name="Right Wall" type="StaticBody2D" parent="Tilemap/Wall and Floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Wall and Floor/Right Wall"]
+position = Vector2(685.5, 315.5)
+shape = SubResource("RectangleShape2D_40ay8")
+
+[node name="Left Wall" type="StaticBody2D" parent="Tilemap/Wall and Floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Wall and Floor/Left Wall"]
+position = Vector2(279, 319.5)
+shape = SubResource("RectangleShape2D_8ghme")
+
+[node name="Floor" type="StaticBody2D" parent="Tilemap/Wall and Floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Wall and Floor/Floor"]
+position = Vector2(480, 423.75)
+shape = SubResource("RectangleShape2D_ypoyl")
+
+[node name="Door" type="TileMapLayer" parent="Tilemap"]
+position = Vector2(-346, -191.99998)
+scale = Vector2(1.8643525, 1.599889)
+tile_map_data = PackedByteArray("AAAXABIAAwAOAAUAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="Door_Area" type="Area2D" parent="Tilemap/Door"]
+position = Vector2(377.07462, 296.89557)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Door/Door_Area"]
+position = Vector2(-1.0727386, 0.31251526)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_8tulj")
+
+[node name="Objects" type="Node2D" parent="Tilemap"]
+
+[node name="Cabinet" type="Sprite2D" parent="Tilemap/Objects"]
+
+[node name="Cb_closed" type="TileMapLayer" parent="Tilemap/Objects/Cabinet"]
+position = Vector2(-346, -191.99998)
+scale = Vector2(1.8643525, 1.599889)
+tile_map_data = PackedByteArray("AAAaABMAAgAAAAcAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="Cb_open" type="TileMapLayer" parent="Tilemap/Objects/Cabinet"]
+visible = false
+position = Vector2(-346, -191.99998)
+scale = Vector2(1.8643525, 1.599889)
+tile_map_data = PackedByteArray("AAAaABMAAQAAAAcAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="Cb_Area" type="Area2D" parent="Tilemap/Objects/Cabinet"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Cabinet/Cb_Area"]
+z_index = 1
+position = Vector2(445, 304)
+shape = SubResource("RectangleShape2D_rhykh")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tilemap/Objects/Cabinet"]
+position = Vector2(343, 152)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Cabinet/StaticBody2D"]
+position = Vector2(102.5, 165)
+shape = SubResource("RectangleShape2D_jk88f")
+
+[node name="Sidetable" type="Sprite2D" parent="Tilemap/Objects"]
+position = Vector2(-481, -187)
+scale = Vector2(1.8643525, 1.599889)
+
+[node name="ST_closed" type="TileMapLayer" parent="Tilemap/Objects/Sidetable"]
+scale = Vector2(1, 1.0000001)
+tile_map_data = PackedByteArray("AAAgABMAAgAAAAAAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="ST_open" type="TileMapLayer" parent="Tilemap/Objects/Sidetable"]
+visible = false
+scale = Vector2(1, 1.0000002)
+tile_map_data = PackedByteArray("AAAgABMAAQAAAAAAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="ST_Area" type="Area2D" parent="Tilemap/Objects/Sidetable"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Sidetable/ST_Area"]
+position = Vector2(520.28796, 316.89716)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_sf3lf")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tilemap/Objects/Sidetable"]
+position = Vector2(290.18118, 165.01146)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Sidetable/StaticBody2D"]
+position = Vector2(230.01112, 147.19774)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_r68mi")
+
+[node name="Lamp" type="Sprite2D" parent="Tilemap/Objects"]
+position = Vector2(-363, -189)
+scale = Vector2(1.8643525, 1.5998894)
+
+[node name="L_on" type="TileMapLayer" parent="Tilemap/Objects/Lamp"]
+scale = Vector2(1, 0.99999976)
+tile_map_data = PackedByteArray("AAAcABIAAQAAABAAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="L_off" type="TileMapLayer" parent="Tilemap/Objects/Lamp"]
+visible = false
+scale = Vector2(1, 0.99999976)
+tile_map_data = PackedByteArray("AAAcABIAAgAAABAAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="L_Area" type="Area2D" parent="Tilemap/Objects/Lamp"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Lamp/L_Area"]
+position = Vector2(456.55438, 296.58334)
+shape = SubResource("RectangleShape2D_2myj0")
+
+[node name="Bed" type="TileMapLayer" parent="Tilemap/Objects"]
+position = Vector2(-369.00003, -195.99998)
+scale = Vector2(1.8643525, 1.599889)
+tile_map_data = PackedByteArray("AAAeABQAAAAKABAAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tilemap/Objects/Bed"]
+position = Vector2(249.41638, 156.88588)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Bed/StaticBody2D"]
+position = Vector2(238.78436, 176.57513)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_la1vt")
+
+[node name="Bed_Area" type="Area2D" parent="Tilemap/Objects/Bed"]
+position = Vector2(489.7143, 334.3982)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Bed/Bed_Area"]
+position = Vector2(-1.6091309, -0.93756104)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_8i2ej")
+
+[node name="Shelf" type="TileMapLayer" parent="Tilemap/Objects"]
+position = Vector2(-352.00003, -180)
+scale = Vector2(1.8643525, 1.599889)
+tile_map_data = PackedByteArray("AAAgABIAAgACAAQAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tilemap/Objects/Shelf"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Shelf/StaticBody2D"]
+position = Vector2(519.8471, 308.77148)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_cql55")
+
+[node name="Shelf_Area" type="Area2D" parent="Tilemap/Objects/Shelf"]
+position = Vector2(519.7515, 295.6455)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Shelf/Shelf_Area"]
+position = Vector2(0.26818848, -0.31251526)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_ubmf4")
+
+[node name="Table-Chair" type="Sprite2D" parent="Tilemap/Objects"]
+position = Vector2(50, -69)
+scale = Vector2(1.1491276, 1.2687778)
+
+[node name="Table" type="TileMapLayer" parent="Tilemap/Objects/Table-Chair"]
+z_index = 2
+tile_map_data = PackedByteArray("AAAgABUAAAAYAAcAAAAhABUAAAAdAAcAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tilemap/Objects/Table-Chair/Table"]
+position = Vector2(529.097, 338.1206)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Table-Chair/Table/StaticBody2D"]
+position = Vector2(-1.4159546, 6.305359)
+shape = SubResource("RectangleShape2D_vmnkg")
+
+[node name="Chair" type="TileMapLayer" parent="Tilemap/Objects/Table-Chair"]
+z_index = 1
+position = Vector2(42.641045, -3.1526413)
+tile_map_data = PackedByteArray("AAAdABUAAgAGAAAAAAA=")
+tile_set = ExtResource("2_8tulj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tilemap/Objects/Table-Chair/Chair"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Table-Chair/Chair/StaticBody2D"]
+position = Vector2(467.31094, 346.1252)
+shape = SubResource("RectangleShape2D_cekru")
+
+[node name="Area2D" type="Area2D" parent="Tilemap/Objects/Table-Chair"]
+position = Vector2(529.09705, 338.9088)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemap/Objects/Table-Chair/Area2D"]
+position = Vector2(-0.8701782, 1.182312)
+shape = SubResource("RectangleShape2D_u58lv")
