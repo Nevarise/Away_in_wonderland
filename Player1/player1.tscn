@@ -115,9 +115,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ac6tw"]
-radius = 9.0
-height = 18.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k42ts"]
+size = Vector2(19, 15)
 
 [node name="Player1" type="CharacterBody2D"]
 script = ExtResource("1_k42ts")
@@ -131,8 +130,8 @@ frame_progress = 0.7190884
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 24)
-shape = SubResource("CapsuleShape2D_ac6tw")
+position = Vector2(0.5, 24.5)
+shape = SubResource("RectangleShape2D_k42ts")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(5, 5)

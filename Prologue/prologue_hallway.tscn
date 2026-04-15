@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bjyvou3hbnve0" path="res://Prologue/Top-Down_Retro_Interior/TopDownHouse_FurnitureState1.png" id="3_vxswu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0buot"]
-size = Vector2(832, 7)
+size = Vector2(838.83185, 7)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yylv0"]
 size = Vector2(832, 22)
@@ -53,22 +53,22 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_otwyy"]
-size = Vector2(21.587072, 12.825993)
+size = Vector2(21.587072, 45.532536)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u42u2"]
-size = Vector2(15.193903, 15.391312)
+size = Vector2(8.994629, 46.81527)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cnx3l"]
 size = Vector2(14.797146, 47.195625)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_obort"]
-size = Vector2(15.590675, 14.489105)
+size = Vector2(8.994616, 46.554344)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8c8pf"]
 size = Vector2(15.396774, 46.554382)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41jrs"]
-size = Vector2(16.190308, 14.750029)
+size = Vector2(9.59429, 46.494675)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t6q10"]
 size = Vector2(15.39679, 46.173943)
@@ -78,7 +78,7 @@ script = ExtResource("1_yylv0")
 
 [node name="Player1" parent="." instance=ExtResource("1_0buot")]
 z_index = 5
-position = Vector2(392, 352)
+position = Vector2(363, 345)
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -92,7 +92,7 @@ use_kinematic_bodies = true
 [node name="Wall" type="StaticBody2D" parent="TileMap/Wall and Floor"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Wall and Floor/Wall"]
-position = Vector2(459.72992, 349)
+position = Vector2(463.14584, 349)
 shape = SubResource("RectangleShape2D_0buot")
 
 [node name="Floor" type="StaticBody2D" parent="TileMap/Wall and Floor"]
@@ -195,7 +195,7 @@ frame_progress = 0.13900083
 position = Vector2(0, 7.6293945e-06)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Objects/Clock/StaticBody2D"]
-position = Vector2(632.62103, 326.4246)
+position = Vector2(632.62103, 342.77786)
 shape = SubResource("RectangleShape2D_otwyy")
 
 [node name="Light1" type="Sprite2D" parent="TileMap/Objects"]
@@ -218,7 +218,7 @@ use_kinematic_bodies = true
 [node name="StaticBody2D" type="StaticBody2D" parent="TileMap/Objects/Light1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Objects/Light1/StaticBody2D"]
-position = Vector2(296.42093, 327.0658)
+position = Vector2(296.5224, 342.77783)
 shape = SubResource("RectangleShape2D_u42u2")
 
 [node name="Light1-Area" type="Area2D" parent="TileMap/Objects/Light1"]
@@ -247,7 +247,7 @@ use_kinematic_bodies = true
 [node name="StaticBody2D2" type="StaticBody2D" parent="TileMap/Objects/Light2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Objects/Light2/StaticBody2D2"]
-position = Vector2(408.35538, 326.8756)
+position = Vector2(408.65527, 342.90826)
 shape = SubResource("RectangleShape2D_obort")
 
 [node name="Light2-Area" type="Area2D" parent="TileMap/Objects/Light2"]
@@ -276,7 +276,7 @@ use_kinematic_bodies = true
 [node name="StaticBody2D" type="StaticBody2D" parent="TileMap/Objects/Light3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Objects/Light3/StaticBody2D"]
-position = Vector2(520.1884, 327.38647)
+position = Vector2(520.48816, 343.25882)
 shape = SubResource("RectangleShape2D_41jrs")
 
 [node name="Light3-Area" type="Area2D" parent="TileMap/Objects/Light3"]
